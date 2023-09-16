@@ -24,15 +24,8 @@ class Program
         Log.Information(" Приложение запущено");
 
 
-        // Ввод данных
-        Console.WriteLine("Введите длину стороны А:");
-        string sideAInput = Console.ReadLine();
-        Console.WriteLine("Введите длину стороны Б:");
-        string sideBInput = Console.ReadLine();
-        Console.WriteLine("Введите длину стороны С:");
-        string sideCInput = Console.ReadLine();
 
-        var result = getTriangleIngfo(sideAInput, sideBInput, sideCInput);
+        var result = getTriangleIngfo("8", "8", "8");
 
         string r = "";
         foreach (var ver in result.Item2)
